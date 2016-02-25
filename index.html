@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Local Weather</title>
+		<link rel="stylesheet" href="includes/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+		<link rel="stylesheet" href="localWeather.css">
+		<script src="includes/jquery.min.js"></script>
+		<script src="includes/bootstrap/js/bootstrap.min.js"></script>
+		<script src="localWeather.js"></script>
+	</head>
+	<body>
+		<div id="dark-layer">
+			<div id="geolocAlert" class="text-center">
+				<div class="alert alert-info">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					<strong>Info!</strong> Please allow geolocation detection to get more accurate results </div>
+			</div>
+			<div class="container">
+				<div class="jumbotron text-center">
+					<h1>Weather<small>by <a href="https://www.github.com/zer0rei" target="_blank">HE</a></small></h1>
+					<div id="forcast">
+						<p id="city"></p>
+						<p><span id="temp"></span><span id="degree"></span></p>
+						<div id="weatherIcon"></div>
+						<p id="description"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

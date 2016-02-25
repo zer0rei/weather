@@ -1,0 +1,65 @@
+html {
+	height: 100%;
+}
+
+body {
+	background-image:  url("images/background.jpg");
+	background-size: cover;
+	height: 100%;
+}
+
+#dark-layer {
+	background-color: rgba(0, 0, 0, 0.5);
+	min-height: 100%;
+	height: auto;
+
+}
+
+.jumbotron {
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+	margin-top: 3%;
+}
+
+.jumbotron h1 {
+	font-size: 3.5em;
+}
+
+.jumbotron small {
+	font-size: 25%;
+	color: lightgrey;
+}
+
+.jumbotron small a {
+	color: lightgrey;
+}
+
+#temp {
+	font-size: 2.5em;  
+}
+
+#weatherIcon {
+	font-size: 5em;
+}
+
+#cityInput {
+	width: 12em;
+}
+
+#geolocAlert {
+	display: none;
+}
+
+#degree {
+	margin-left: 0.2em;
+	position: relative;
+	top: -1em; 
+}
+
+#degree button {
+	padding: 0 0.2em;
+}
+
+#degree i {
+	font-size: 1.5em;
+}
