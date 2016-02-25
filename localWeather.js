@@ -21,11 +21,10 @@ $(document).ready(function() {
 				$("#fahrenheit").addClass("active");
 			});
 			var weatherState = json.list[0].weather[0].main;
-			var timeInHours = (new Date()).getHours();
 
 			// Icon per Weather state
 			if (weatherState == "Clear")
-				if (6 <= timeInHours && timeInHours <= 18)
+				if (json.list[0].sys.pod == "d")
 					$("#weatherIcon").html('<i class="wi wi-day-sunny"></i>');
 				else
 					$("#weatherIcon").html('<i class="wi wi-night-clear"></i>');
