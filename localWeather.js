@@ -286,7 +286,7 @@ $(document).ready(function() {
 		getForecast(position.coords.latitude, position.coords.longitude);
 
 	}
-	// if geolocation rejected
+	// If geolocation rejected
 	function errorCallback() {
 		$.getJSON("http://ipinfo.io/json", function(json) {
 			var cord = json.loc.split(",");
@@ -297,7 +297,7 @@ $(document).ready(function() {
 
 	// Blink jumborton subtitle link
 	(function blink() { 
-		  $('.jumbotron a').delay(2500).fadeOut(300).fadeIn(300, blink); 
+		$(".jumbotron a").delay(3500).fadeOut(300).fadeIn(300, blink); 
 	})();
 
 }); // <<< ready
