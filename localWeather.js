@@ -30,21 +30,25 @@ $(document).ready(function() {
 					$("#weatherIcon").html('<i class="wi wi-day-cloudy"></i>');
 				else if (weatherState == "Rain")
 					$("#weatherIcon").html('<i class="wi wi-day-rain"></i>');
+				else if (weatherState == "Drizzle")
+					$("#weatherIcon").html('<i class="wi wi-day-sprinkle"></i>');
 				else if (weatherState == "Snow")
 					$("#weatherIcon").html('<i class="wi wi-day-snow"></i>');
-				else if (weatherState == "Storm")
+				else if (weatherState == "Thunderstorm")
 					$("#weatherIcon").html('<i class="wi wi-day-storm-showers"></i>');
 			}
 			else {
 				if (weatherState == "Clear")
 					$("#weatherIcon").html('<i class="wi wi-night-clear"></i>');
 				else if (weatherState == "Clouds")
-					$("#weatherIcon").html('<i class="wi wi-night-cloudy"></i>');
+					$("#weatherIcon").html('<i class="wi wi-night-alt-cloudy"></i>');
 				else if (weatherState == "Rain")
-					$("#weatherIcon").html('<i class="wi wi-night-rain"></i>');
+					$("#weatherIcon").html('<i class="wi wi-night-alt-rain"></i>');
+				else if (weatherState == "Drizzle")
+					$("#weatherIcon").html('<i class="wi wi-night-alt-sprinkle"></i>');
 				else if (weatherState == "Snow")
 					$("#weatherIcon").html('<i class="wi wi-night-snow"></i>');
-				else if (weatherState == "Storm")
+				else if (weatherState == "Thunderstorm")
 					$("#weatherIcon").html('<i class="wi wi-night-storm-showers"></i>');
 			}
 
