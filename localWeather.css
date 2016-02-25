@@ -41,10 +41,6 @@ body {
 	font-size: 5em;
 }
 
-#cityInput {
-	width: 12em;
-}
-
 #geolocAlert {
 	display: none;
 }
@@ -52,13 +48,15 @@ body {
 #degree {
 	margin-left: 0.2em;
 	position: relative;
-	top: -1em; 
+	top: -1.2em; 
 }
 
 #degree button {
-	padding: 0 0.2em;
+	padding: 0 0.3em;
 }
 
 #degree i {
-	font-size: 1.5em;
+	font-size: 1.7em;
 }
+ 
+@media screen and (max-width: 480)
