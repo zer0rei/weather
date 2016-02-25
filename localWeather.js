@@ -23,19 +23,30 @@ $(document).ready(function() {
 			var weatherState = json.list[0].weather[0].main;
 
 			// Icon per Weather state
-			if (weatherState == "Clear")
-				if (json.list[0].sys.pod == "d")
+			if (json.list[0].sys.pod == "d") {
+				if (weatherState == "Clear")
 					$("#weatherIcon").html('<i class="wi wi-day-sunny"></i>');
-				else
+				else if (weatherState == "Clouds")
+					$("#weatherIcon").html('<i class="wi wi-day-cloudy"></i>');
+				else if (weatherState == "Rain")
+					$("#weatherIcon").html('<i class="wi wi-day-rain"></i>');
+				else if (weatherState == "Snow")
+					$("#weatherIcon").html('<i class="wi wi-day-snow"></i>');
+				else if (weatherState == "Storm")
+					$("#weatherIcon").html('<i class="wi wi-day-storm-showers"></i>');
+			}
+			else {
+				if (weatherState == "Clear")
 					$("#weatherIcon").html('<i class="wi wi-night-clear"></i>');
-			else if (weatherState == "Clouds")
-				$("#weatherIcon").html('<i class="wi wi-cloudy"></i>');
-			else if (weatherState == "Rain")
-				$("#weatherIcon").html('<i class="wi wi-rain"></i>');
-			else if (weatherState == "Snow")
-				$("#weatherIcon").html('<i class="wi wi-snow"></i>');
-			else if (weatherState == "Storm")
-				$("#weatherIcon").html('<i class="wi wi-storm-showers"></i>');
+				else if (weatherState == "Clouds")
+					$("#weatherIcon").html('<i class="wi wi-night-cloudy"></i>');
+				else if (weatherState == "Rain")
+					$("#weatherIcon").html('<i class="wi wi-night-rain"></i>');
+				else if (weatherState == "Snow")
+					$("#weatherIcon").html('<i class="wi wi-night-snow"></i>');
+				else if (weatherState == "Storm")
+					$("#weatherIcon").html('<i class="wi wi-night-storm-showers"></i>');
+			}
 
 			// Description below icon
 			$("#description").html(json.list[0].weather[0].description);
