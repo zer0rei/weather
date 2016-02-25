@@ -25,12 +25,13 @@ body {
 }
 
 .jumbotron small {
+	color: white;
 	font-size: 25%;
-	color: lightgrey;
+	opacity: 0.7;
 }
 
 .jumbotron small a {
-	color: lightgrey;
+	color: white;
 }
 
 #temp {

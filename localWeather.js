@@ -293,7 +293,11 @@ $(document).ready(function() {
 			getForecast(Number(cord[0]), Number(cord[1]));
 		});
 		$("#geolocAlert").css("display", "block");
-
 	}
+
+	// Blink jumborton subtitle link
+	(function blink() { 
+		  $('.jumbotron a').delay(2500).fadeOut(300).fadeIn(300, blink); 
+	})();
 
 }); // <<< ready
