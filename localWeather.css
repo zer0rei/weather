@@ -56,6 +56,10 @@ body {
 	padding: 0 0.3em;
 }
 
+#degree button:focus {
+	outline: none;
+}
+
 #degree i {
 	font-size: 1.7em;
 }
