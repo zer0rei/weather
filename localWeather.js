@@ -1,3 +1,7 @@
+// // // // // // // // // // 
+//  LOCAL WEATHER (by HE)  //
+// // // // // // // // // //
+
 $(document).ready(function() {
 	// Get the forcast and update the html
 	function getForecast(lat, lon) {
