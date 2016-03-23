@@ -35,7 +35,7 @@ body {
 }
 
 #temp {
-	font-size: 2.5em;  
+	font-size: 2.5em;
 }
 
 #weatherIcon {
@@ -49,7 +49,7 @@ body {
 #degree {
 	margin-left: 0.2em;
 	position: relative;
-	top: -1.2em; 
+	top: -1.2em;
 }
 
 #degree button {
