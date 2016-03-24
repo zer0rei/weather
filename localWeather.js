@@ -1,11 +1,14 @@
-// // // // // // // // // // 
+// // // // // // // // // //
 //  LOCAL WEATHER (by HE)  //
 // // // // // // // // // //
 
 $(document).ready(function() {
 	// Get the forcast and update the html
 	function getForecast(lat, lon) {
-		$.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=27c54beef6c753f6da8ce9954b66293e", function(json) {
+		$.getJSON("http://api.openweathermap.org/data/2.5/weather?lat="
+					+ lat + "&lon=" + lon + "&APPID=27c54beef6c753f6da8ce9954b66293e"
+					, function(json) {
+
 			// Info to html
 			// Name
 			if (json.name)
@@ -18,7 +21,14 @@ $(document).ready(function() {
 			var tempFahrenheit = (tempCelsius * (9 / 5) + 32);
 			$("#temp").html(Math.round(tempCelsius));
 			$("#degree").html(
-				'<div class="btn-group" role="group" aria-label="..."><button  id="celsius" type="button" class="btn btn-info active"><i class="wi wi-celsius"></i></button><button id="fahrenheit" type="button" class="btn btn-info"><i class="wi wi-fahrenheit"></i></button></div>')
+				'<div class="btn-group" role="group" aria-label="...">\
+					<button  id="celsius" type="button" class="btn btn-info active">\
+						<i class="wi wi-celsius"></i>\
+					</button>\
+					<button id="fahrenheit" type="button" class="btn btn-info">\
+						<i class="wi wi-fahrenheit"></i>\
+					</button>\
+				</div>')
 				$("#celsius").click(function() {
 					$("#temp").html(Math.round(tempCelsius));
 					$("#fahrenheit").removeClass("active");
@@ -275,7 +285,7 @@ $(document).ready(function() {
 
 				// Description below icon
 				$("#description").html(json.weather[0].description);
-		}); // <<< getJSON 
+		}); // <<< getJSON
 	} // <<< getForecast
 
 	// Get geolocation from user and run getForcast
@@ -299,8 +309,8 @@ $(document).ready(function() {
 	}
 
 	// Blink jumborton subtitle link
-	(function blink() { 
-		$(".jumbotron a").delay(3500).fadeOut(300).fadeIn(300, blink); 
+	(function blink() {
+		$(".jumbotron a").delay(3500).fadeOut(300).fadeIn(300, blink);
 	})();
 
 }); // <<< ready
