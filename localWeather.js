@@ -5,7 +5,7 @@
 $(document).ready(function() {
 	// Get the forcast and update the html
 	function getForecast(lat, lon) {
-		$.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" +
+		$.getJSON("https://api.openweathermap.org/data/2.5/weather?lat=" +
 			lat + "&lon=" + lon + "&APPID=27c54beef6c753f6da8ce9954b66293e",
 			function(json) {
 
