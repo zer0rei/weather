@@ -302,7 +302,7 @@ $(document).ready(function() {
 
 	// If geolocation rejected
 	function errorCallback() {
-		$.getJSON("http://ipinfo.io/json", function(json) {
+		$.getJSON("https://ipinfo.io/json", function(json) {
 			var cord = json.loc.split(",");
 			getForecast(Number(cord[0]), Number(cord[1]));
 		});
